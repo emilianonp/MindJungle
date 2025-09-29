@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light dark;
+}
+
+body {
+  @apply bg-jungle-900 text-jungle-50 min-h-screen;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  @apply outline-none ring-2 ring-jungle-300 ring-offset-2 ring-offset-jungle-900;
+}
+
+::selection {
+  background-color: theme('colors.jungle.400');
+  color: theme('colors.jungle.50');
+}
